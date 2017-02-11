@@ -32,7 +32,7 @@ Namespace My
         
         <Global.System.Diagnostics.DebuggerStepThroughAttribute()>  _
         Protected Overrides Sub OnCreateMainForm()
-            Me.MainForm = Global.Convert_Celsius_to_Fahrenheit.Form1
+            Me.MainForm = Global.Convert_Celsius_to_Fahrenheit.CelsiusToFahrenheit
         End Sub
     End Class
 End Namespace

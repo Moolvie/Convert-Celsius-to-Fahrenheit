@@ -1,5 +1,5 @@
 ﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()> _
-Partial Class Form1
+Partial Class CelsiusToFahrenheit
     Inherits System.Windows.Forms.Form
 
     'Form overrides dispose to clean up the component list.
@@ -22,6 +22,7 @@ Partial Class Form1
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
+        Me.components = New System.ComponentModel.Container()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.Label2 = New System.Windows.Forms.Label()
         Me.Fahrenheit = New System.Windows.Forms.Label()
@@ -29,47 +30,48 @@ Partial Class Form1
         Me.CalcButton = New System.Windows.Forms.Button()
         Me.ClearButton = New System.Windows.Forms.Button()
         Me.ExitButton = New System.Windows.Forms.Button()
-        Me.StatusStrip1 = New System.Windows.Forms.StatusStrip()
-        Me.StatusLabel = New System.Windows.Forms.ToolStripStatusLabel()
-        Me.StatusStrip1.SuspendLayout()
+        Me.ErrorProvider1 = New System.Windows.Forms.ErrorProvider(Me.components)
+        CType(Me.ErrorProvider1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'Label1
         '
         Me.Label1.AutoSize = True
-        Me.Label1.Location = New System.Drawing.Point(34, 23)
+        Me.Label1.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label1.Location = New System.Drawing.Point(45, 32)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(111, 13)
+        Me.Label1.Size = New System.Drawing.Size(59, 16)
         Me.Label1.TabIndex = 0
-        Me.Label1.Text = "Enter Degrees Celsius"
+        Me.Label1.Text = "Celsius"
         '
         'Label2
         '
         Me.Label2.AutoSize = True
-        Me.Label2.Location = New System.Drawing.Point(35, 111)
+        Me.Label2.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label2.Location = New System.Drawing.Point(43, 63)
         Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(110, 13)
+        Me.Label2.Size = New System.Drawing.Size(85, 16)
         Me.Label2.TabIndex = 1
-        Me.Label2.Text = "Equivalent Fahrenheit"
+        Me.Label2.Text = " Fahrenheit"
         '
         'Fahrenheit
         '
         Me.Fahrenheit.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D
-        Me.Fahrenheit.Location = New System.Drawing.Point(151, 110)
+        Me.Fahrenheit.Location = New System.Drawing.Point(151, 61)
         Me.Fahrenheit.Name = "Fahrenheit"
         Me.Fahrenheit.Size = New System.Drawing.Size(100, 23)
         Me.Fahrenheit.TabIndex = 2
         '
         'Celsius
         '
-        Me.Celsius.Location = New System.Drawing.Point(151, 20)
+        Me.Celsius.Location = New System.Drawing.Point(151, 30)
         Me.Celsius.Name = "Celsius"
         Me.Celsius.Size = New System.Drawing.Size(100, 20)
         Me.Celsius.TabIndex = 3
         '
         'CalcButton
         '
-        Me.CalcButton.Location = New System.Drawing.Point(27, 211)
+        Me.CalcButton.Location = New System.Drawing.Point(48, 112)
         Me.CalcButton.Name = "CalcButton"
         Me.CalcButton.Size = New System.Drawing.Size(75, 23)
         Me.CalcButton.TabIndex = 4
@@ -78,7 +80,7 @@ Partial Class Form1
         '
         'ClearButton
         '
-        Me.ClearButton.Location = New System.Drawing.Point(108, 211)
+        Me.ClearButton.Location = New System.Drawing.Point(161, 112)
         Me.ClearButton.Name = "ClearButton"
         Me.ClearButton.Size = New System.Drawing.Size(75, 23)
         Me.ClearButton.TabIndex = 5
@@ -87,33 +89,22 @@ Partial Class Form1
         '
         'ExitButton
         '
-        Me.ExitButton.Location = New System.Drawing.Point(189, 211)
+        Me.ExitButton.Location = New System.Drawing.Point(265, 112)
         Me.ExitButton.Name = "ExitButton"
         Me.ExitButton.Size = New System.Drawing.Size(75, 23)
         Me.ExitButton.TabIndex = 6
         Me.ExitButton.Text = "Exit"
         Me.ExitButton.UseVisualStyleBackColor = True
         '
-        'StatusStrip1
+        'ErrorProvider1
         '
-        Me.StatusStrip1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.StatusLabel})
-        Me.StatusStrip1.Location = New System.Drawing.Point(0, 239)
-        Me.StatusStrip1.Name = "StatusStrip1"
-        Me.StatusStrip1.Size = New System.Drawing.Size(284, 22)
-        Me.StatusStrip1.TabIndex = 7
-        Me.StatusStrip1.Text = "StatusStrip1"
+        Me.ErrorProvider1.ContainerControl = Me
         '
-        'StatusLabel
-        '
-        Me.StatusLabel.Name = "StatusLabel"
-        Me.StatusLabel.Size = New System.Drawing.Size(0, 17)
-        '
-        'Form1
+        'CelsiusToFahrenheit
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(284, 261)
-        Me.Controls.Add(Me.StatusStrip1)
+        Me.ClientSize = New System.Drawing.Size(384, 185)
         Me.Controls.Add(Me.ExitButton)
         Me.Controls.Add(Me.ClearButton)
         Me.Controls.Add(Me.CalcButton)
@@ -121,11 +112,10 @@ Partial Class Form1
         Me.Controls.Add(Me.Fahrenheit)
         Me.Controls.Add(Me.Label2)
         Me.Controls.Add(Me.Label1)
-        Me.Name = "Form1"
+        Me.Name = "CelsiusToFahrenheit"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "Celsius to Fahrenheit"
-        Me.StatusStrip1.ResumeLayout(False)
-        Me.StatusStrip1.PerformLayout()
+        CType(Me.ErrorProvider1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -137,7 +127,5 @@ Partial Class Form1
     Friend WithEvents CalcButton As System.Windows.Forms.Button
     Friend WithEvents ClearButton As System.Windows.Forms.Button
     Friend WithEvents ExitButton As System.Windows.Forms.Button
-    Friend WithEvents StatusStrip1 As System.Windows.Forms.StatusStrip
-    Friend WithEvents StatusLabel As System.Windows.Forms.ToolStripStatusLabel
-
+    Friend WithEvents ErrorProvider1 As ErrorProvider
 End Class
