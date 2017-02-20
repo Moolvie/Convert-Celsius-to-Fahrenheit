@@ -1,5 +1,4 @@
 ﻿Public Class CelsiusToFahrenheit
-
     Private Sub ExitButton_Click(sender As Object, e As EventArgs) Handles ExitButton.Click
         ' close the form
         Me.Close()
